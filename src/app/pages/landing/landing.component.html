@@ -1,0 +1,30 @@
+<div class="landing">
+  <div class="landing_title-section">
+    <div class="landing_title-section_img">
+      <img src="../../../assets/img/hbo-logo.jpeg" alt="" />
+    </div>
+    <div class="landing_title-section_sub-title">
+      Now streaming blockbuster movies, epic originals, and addictive series
+    </div>
+  </div>
+  <div class="landing_img-carousel">
+    <div class="landing_img-carousel_top">
+      <img
+        *ngFor="let movieImg of movies; index as i"
+        [src]="getImages(movieImg.poster_path)"
+        alt=""
+      />
+    </div>
+    <div class="landing_img-carousel_bottom">
+      <img
+        *ngFor="let movieImg of movies; index as i"
+        [src]="getImages(movieImg.poster_path)"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="landing_plans">
+    <span class="landing_plans_price"> Plans start at $9.99/month </span>
+    <span class="landing_plans_btn"> SIGN UP NOW </span>
+  </div>
+</div>
