@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'hbo-max-official';
 
   constructor(private movieService: MovieService) {
-    this.movieService.fetchMovies('/movie/popular');
+    this.movieService.fetchMovies();
   }
 }
